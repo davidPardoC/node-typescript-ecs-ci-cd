@@ -1,0 +1,9 @@
+version: '3.0'
+services:
+  app:
+    build: .
+    container_name: backend_app
+    env_file:
+      - .env
+    ports:
+      - 80:3000
